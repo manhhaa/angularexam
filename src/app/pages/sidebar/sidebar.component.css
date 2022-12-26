@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+}
+
+li {
+}
+
+.side-bar {
+  background-color: #f8f9fa;
+  height: 100%;
+}
+
+.hover-sidebar {
+  padding: 10px 0 10px 40px;
+}
+
+.hover-sidebar:hover {
+  background-color: #135aff;
+}
+
+.hover-sidebar:hover>a {
+  color: #f8f9fa !important;
+}

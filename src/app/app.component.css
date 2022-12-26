@@ -1,0 +1,5 @@
+.show-content {
+  /*height: 100vh;*/
+  display: flex;
+  height: 700px;
+}

@@ -1,0 +1,33 @@
+<div class="flex-shrink-0 side-bar" style="width: 280px;">
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" (click)="handleShowSideBar1()">
+        <i class="fa-solid fa-chevron-down"></i>
+        Favorites
+      </button>
+      <div *ngIf="setShow" class="collapse show" id="home-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li class="hover-sidebar" routerLink=""><a  class="link-dark rounded">Inbox</a></li>
+          <li class="hover-sidebar" routerLink="/send-item"><a  class="link-dark rounded">Send Items</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false" (click)="handleShowSideBar2()">
+        <i class="fa-solid fa-chevron-down"></i>
+        John
+      </button>
+      <div *ngIf="setShow2" class="collapse show" id="orders-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li class="hover-sidebar"><a href="#" class="link-dark rounded">Inbox</a></li>
+          <li class="hover-sidebar"><a href="#" class="link-dark rounded">Drafts</a></li>
+          <li class="hover-sidebar"><a href="#" class="link-dark rounded">Deleted Items</a></li>
+          <li class="hover-sidebar"><a href="#" class="link-dark rounded">Send Items</a></li>
+          <li class="hover-sidebar"><a href="#" class="link-dark rounded">Outbox</a></li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+</div>
